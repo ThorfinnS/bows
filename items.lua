@@ -63,6 +63,26 @@ bows.register_arrow("arrow",{
 	craft = {
 		{"default:flint", "group:stick", bows.feather}
 	},
+})
+	
+bows.register_arrow("arrow_stone",{
+	description = "Stone Arrow",
+	texture = "bows_arrow_stone.png",
+	damage = 2,
+	craft_count = 4,
+	craft = {
+		{"default:stone", "group:stick", bows.feather}
+	},
+})
+
+bows.register_arrow("arrow_glass",{
+	description = "Glass Arrow",
+	texture = "bows_arrow_glass.png",
+	damage = 3,
+	craft_count = 4,
+	craft = {
+		{"default:glass", "group:stick", bows.feather}
+	},
 --[[
 	on_hit_node = function(self, pos, user, arrow_pos)
 
